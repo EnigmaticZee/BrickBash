@@ -25,4 +25,14 @@ public class Ball : MonoBehaviour
 		}
 		
 	}
+
+    void OnCollisionEnter(Collision other)
+    {
+        if (other.gameObject.tag == "Destructible")
+        {
+            
+            Destroy(other.gameObject);
+        }
+            
+    }
 }
