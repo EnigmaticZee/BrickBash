@@ -1,8 +1,15 @@
-language: objective-c
-osx_image: xcode61
-rvm:
-- 2.1.2
-install:
-- ./scripts/install.sh
-script:
-- ./scripts/build.sh
+# language: objective-c
+# osx_image: xcode61
+# rvm:
+# - 2.1.2
+# install:
+# - ./scripts/install.sh
+# script:
+# - ./scripts/build.sh
+
+language: csharp
+solution: BrickBash.sln
+script:    # the following commands are just examples, use whatever your build process requires
+  - ./build.sh
+  - ./test.sh
+#  - grep "Test Results" build.log
