@@ -37,3 +37,4 @@ echo "Attempting to build $project for Linux"
 
 echo 'Logs from build'
 cat $(pwd)/unity.log
+chmod -x install.sh
