@@ -10,6 +10,6 @@
 language: csharp
 solution: BrickBash.sln
 script:    # the following commands are just examples, use whatever your build process requires
-  - ./build.sh
-  - ./test.sh
-#  - grep "Test Results" build.log
+  - ./scripts/install.sh
+  - ./scripts/build.sh
+  - grep "Test Results" build.log
