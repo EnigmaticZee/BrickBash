@@ -6,6 +6,7 @@ public class Ball : MonoBehaviour
 	public float ballInitialVelocity = 600f;
 	private Rigidbody rb;
 	private bool ballInPlay;
+    private GameManager gM;
 	
 	// Use this for initialization
 	void Awake () 
@@ -23,6 +24,8 @@ public class Ball : MonoBehaviour
 			rb.isKinematic =  false;
 			rb.AddForce(new Vector3(ballInitialVelocity, ballInitialVelocity, 0));
 		}
-		
+
+       
+	
 	}
 }

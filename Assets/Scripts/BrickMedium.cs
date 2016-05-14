@@ -11,7 +11,6 @@ public class BrickMedium : MonoBehaviour {
 		
 		Instantiate (brickParticles, transform.position, Quaternion.identity); 
 		
-
 			GameManager.instance.DestroyBrick();
 			if (++hitsTaken >= hitsNeeded)
 				Destroy(gameObject);
