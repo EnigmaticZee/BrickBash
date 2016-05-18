@@ -12,13 +12,15 @@ public class GameManager : MonoBehaviour {
 	public GameObject brickspreFab;
 	public GameObject paddle;
 	public GameObject deathParticles;
-	public static GameManager instance = null;
+    public static GameManager instance = null;
 
-	//public AudioSource audio;
+	public AudioSource bricksCrushed;
+    public AudioSource ballMissed;
+    public AudioSource bgMusic;
 
 
 
-	private GameObject clonePaddle;
+    private GameObject clonePaddle;
 	// Use this for initialization
 	void Start () 
 	{
@@ -26,7 +28,7 @@ public class GameManager : MonoBehaviour {
 			instance = this;
 		else if (instance != this)
 			Destroy (gameObject);
-
+        bgMusic.Play();
 		Setup ();
 	}
 
@@ -65,6 +67,7 @@ public class GameManager : MonoBehaviour {
 		lives--;
 		livesText.text = "Lives: " + lives;
 		Instantiate (deathParticles, clonePaddle.transform.position, Quaternion.identity);
+        ballMissed.Play();
 		Destroy (clonePaddle);
 		Invoke ("SetupPaddle", resetDelay);
 		checkGameOver();
@@ -79,7 +82,7 @@ public class GameManager : MonoBehaviour {
 	public void DestroyBrick()
 	{
 		bricks--;
-		//audio.Play ();
+		bricksCrushed.Play ();
 		checkGameOver ();
 	}
 }
