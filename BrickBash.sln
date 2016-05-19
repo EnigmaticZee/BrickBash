@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 11.00
 
 Project("{341C5D37-77C2-6BF2-5388-1CCCABF3388D}") = "BrickBash", "Assembly-CSharp.csproj", "{2B60EACF-014E-595F-C520-D9CCD9DE936C}"
 EndProject
+Project("{341C5D37-77C2-6BF2-5388-1CCCABF3388D}") = "BrickBash", "Assembly-CSharp-Editor.csproj", "{BB671A0C-7ED8-DD39-8BC5-E062065427A2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -13,6 +15,10 @@ Global
 		{2B60EACF-014E-595F-C520-D9CCD9DE936C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2B60EACF-014E-595F-C520-D9CCD9DE936C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2B60EACF-014E-595F-C520-D9CCD9DE936C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BB671A0C-7ED8-DD39-8BC5-E062065427A2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB671A0C-7ED8-DD39-8BC5-E062065427A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BB671A0C-7ED8-DD39-8BC5-E062065427A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BB671A0C-7ED8-DD39-8BC5-E062065427A2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -39,5 +45,4 @@ Global
 		$3.inheritsScope = text/plain
 		$3.scope = text/plain
 	EndGlobalSection
-
 EndGlobal

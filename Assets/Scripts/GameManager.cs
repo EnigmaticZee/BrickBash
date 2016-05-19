@@ -60,9 +60,10 @@ public class GameManager : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
-	public void LoseLife()
+	public void LoseLife(bool unitTesting = false)
 	{
 		lives--;
+		if (unitTesting) return;
 		livesText.text = "Lives: " + lives;
 		Instantiate (deathParticles, clonePaddle.transform.position, Quaternion.identity);
 		Destroy (clonePaddle);

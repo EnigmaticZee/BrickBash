@@ -7,14 +7,16 @@ public class BrickMedium : MonoBehaviour {
 	int hitsTaken;
 	
 	public void OnCollisionEnter(Collision other)
-	{
-		
+	{		
 		Instantiate (brickParticles, transform.position, Quaternion.identity); 
-		
-			GameManager.instance.DestroyBrick();
-			if (++hitsTaken >= hitsNeeded)
-				Destroy(gameObject);
-		
-		
+
+		if (++hitsTaken >= hitsNeeded) {
+			GameManager.instance.DestroyBrick(); // plays sound, and decrements brick count 
+			Destroy(gameObject);
+		}else{
+			// TODO: you probably want to play a CLINK type of sound HERE
+			// when ball bounces off this brick on the 1st hit 
+			//audio.Play ("clink");
+		}
 	}
 }
