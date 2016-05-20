@@ -1,9 +1,10 @@
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2008
-
-Project("{341C5D37-77C2-6BF2-5388-1CCCABF3388D}") = "BrickBash", "Assembly-CSharp.csproj", "{2B60EACF-014E-595F-C520-D9CCD9DE936C}"
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25123.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{2B60EACF-014E-595F-C520-D9CCD9DE936C}"
 EndProject
-Project("{341C5D37-77C2-6BF2-5388-1CCCABF3388D}") = "BrickBash", "Assembly-CSharp-Editor.csproj", "{BB671A0C-7ED8-DD39-8BC5-E062065427A2}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp-Editor", "Assembly-CSharp-Editor.csproj", "{BB671A0C-7ED8-DD39-8BC5-E062065427A2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,20 +24,16 @@ Global
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
-																																																																							GlobalSection(MonoDevelopProperties) = preSolution
-=======
-															GlobalSection(MonoDevelopProperties) = preSolution
->>>>>>> 76fb7894ec11a235c0b6df36edf13a134f32b959
+	GlobalSection(MonoDevelopProperties) = preSolution
 		StartupItem = Assembly-CSharp.csproj
 		Policies = $0
-		$0.TextStylePolicy = $1
+		$0.TextStylePolicy = $3
 		$1.inheritsSet = null
 		$1.scope = text/x-csharp
 		$0.CSharpFormattingPolicy = $2
 		$2.inheritsSet = Mono
 		$2.inheritsScope = text/x-csharp
 		$2.scope = text/x-csharp
-		$0.TextStylePolicy = $3
 		$3.FileWidth = 120
 		$3.TabWidth = 4
 		$3.IndentWidth = 4

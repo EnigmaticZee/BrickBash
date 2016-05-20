@@ -41,6 +41,7 @@ public class GameManager : MonoBehaviour {
 	{
 		if (bricks < 1) 
 		{
+            ScoreManager.score = ScoreManager.score + (lives * 750 - (int)(Time.time * 1.5));
 			ShowMenuAndMessage (youWon);
 		}
 

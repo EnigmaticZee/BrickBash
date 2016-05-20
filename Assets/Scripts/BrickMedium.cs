@@ -13,7 +13,9 @@ public class BrickMedium : MonoBehaviour {
 		if (++hitsTaken >= hitsNeeded) {
 			GameManager.instance.DestroyBrick(); // plays sound, and decrements brick count 
 			Destroy(gameObject);
-		}else{
+            ScoreManager.score = ScoreManager.score + 200;
+        }
+        else{
 			// TODO: you probably want to play a CLINK type of sound HERE
 			// when ball bounces off this brick on the 1st hit 
 			//audio.Play ("clink");
