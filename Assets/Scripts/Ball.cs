@@ -25,11 +25,11 @@ public class Ball : MonoBehaviour
 		}
 	}
 
-    void OnCollisionEnter(Collision other)
+   /* void OnCollisionEnter(Collision other)
     {
         if (other.gameObject.tag == "Player")
         {
             
         }
-    }
+    }*/
 }

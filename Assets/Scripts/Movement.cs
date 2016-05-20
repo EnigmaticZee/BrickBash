@@ -16,15 +16,5 @@ public class Movement : MonoBehaviour
         transform.position = playerPos;
     }
 
-    void OnCollsionEnter(Collision other)
-    {
-        Debug.Log("inside collision");
-        if (other.gameObject.tag == "Ball")
-        {
-            Debug.Log("HIt");
-
-            //gm.paddleHit.Plays
-
-        }
-    }
+   
 }

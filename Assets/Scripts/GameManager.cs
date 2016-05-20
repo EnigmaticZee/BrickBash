@@ -17,7 +17,8 @@ public class GameManager : MonoBehaviour {
 	public AudioSource backgroundMusic;
     public AudioSource missPaddle;
     public AudioSource smashBricks;
-
+  
+ 
 
 
 
@@ -33,7 +34,7 @@ public class GameManager : MonoBehaviour {
 		Setup ();
         backgroundMusic.Play();
 	}
-
+   
 	public void Setup()
 	{
 		clonePaddle = Instantiate (paddle, transform.position, Quaternion.identity) as GameObject;
@@ -100,4 +101,5 @@ public class GameManager : MonoBehaviour {
 		smashBricks.Play ();
 		checkGameOver ();
 	}
+
 }
