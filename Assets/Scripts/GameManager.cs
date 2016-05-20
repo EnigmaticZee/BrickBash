@@ -14,8 +14,10 @@ public class GameManager : MonoBehaviour {
 	public GameObject paddle;
 	public GameObject deathParticles;
 	public static GameManager instance = null;
+	public AudioSource backgroundMusic;
+    public AudioSource missPaddle;
+    public AudioSource smashBricks;
 
-	//public AudioSource audio;
 
 
 
@@ -29,6 +31,7 @@ public class GameManager : MonoBehaviour {
 			Destroy (gameObject);
 
 		Setup ();
+        backgroundMusic.Play();
 	}
 
 	public void Setup()
@@ -79,6 +82,7 @@ public class GameManager : MonoBehaviour {
 		if (unitTesting) return;
 		livesText.text = "Lives: " + lives;
 		Instantiate (deathParticles, clonePaddle.transform.position, Quaternion.identity);
+        missPaddle.Play();
 		Destroy (clonePaddle);
 		Invoke ("SetupPaddle", resetDelay);
 		checkGameOver();
@@ -93,7 +97,7 @@ public class GameManager : MonoBehaviour {
 	public void DestroyBrick()
 	{
 		bricks--;
-		//audio.Play ();
+		smashBricks.Play ();
 		checkGameOver ();
 	}
 }
