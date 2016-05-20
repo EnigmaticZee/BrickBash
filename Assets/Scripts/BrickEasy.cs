@@ -6,11 +6,13 @@ public class BrickEasy : MonoBehaviour {
     public ScoreManager sm;
 
 
+
 	public void OnCollisionEnter(Collision other)
 	{
 		Instantiate (brickParticles, transform.position, Quaternion.identity); 
 		GameManager.instance.DestroyBrick();
 		Destroy(gameObject);
         ScoreManager.score = ScoreManager.score + 100;
+
 	}
 }
