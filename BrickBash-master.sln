@@ -1,0 +1,29 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2008
+
+Project("{9B3B69BF-4E5A-DE31-F343-DFBDAD9AF11E}") = "BrickBash-master", "Assembly-CSharp.csproj", "{785F1D58-4FA1-8F9B-34C8-68C7533E2529}"
+EndProject
+Project("{9B3B69BF-4E5A-DE31-F343-DFBDAD9AF11E}") = "BrickBash-master", "Assembly-CSharp-Editor.csproj", "{D324D981-A4EA-4D0B-8E4C-75330B23F970}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{785F1D58-4FA1-8F9B-34C8-68C7533E2529}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{785F1D58-4FA1-8F9B-34C8-68C7533E2529}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{785F1D58-4FA1-8F9B-34C8-68C7533E2529}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{785F1D58-4FA1-8F9B-34C8-68C7533E2529}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D324D981-A4EA-4D0B-8E4C-75330B23F970}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D324D981-A4EA-4D0B-8E4C-75330B23F970}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D324D981-A4EA-4D0B-8E4C-75330B23F970}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D324D981-A4EA-4D0B-8E4C-75330B23F970}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Assembly-CSharp.csproj
+	EndGlobalSection
+EndGlobal

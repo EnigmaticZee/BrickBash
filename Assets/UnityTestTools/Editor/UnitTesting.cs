@@ -38,4 +38,14 @@ public class UnitTesting {
 		gm.LoseLife(true);
 		Assert.AreEqual(0, gm.lives);
 	}
+
+	[Test]
+	public void TestShowMenuAndMessage()
+	{
+		GameManager gm = new GameManager();
+		GameObject message = new GameObject();
+		message.SetActive(false);
+		gm.ShowMenuAndMessage(message, true);
+		Assert.IsTrue(message.activeSelf);
+	}
 }

@@ -7,6 +7,7 @@ public class GameManager : MonoBehaviour {
 	public int bricks = 20;
 	public float resetDelay = 1f;
 	public Text livesText;
+	public GameObject mainMenu;
 	public GameObject gameOver;
 	public GameObject youWon;
 	public GameObject brickspreFab;
@@ -40,17 +41,22 @@ public class GameManager : MonoBehaviour {
 	{
 		if (bricks < 1) 
 		{
-			youWon.SetActive (true);
-			Time.timeScale = .25f;
-			Invoke("Reset", resetDelay);
+			ShowMenuAndMessage (youWon);
 		}
 
 		if (lives < 1) 
 		{
-			gameOver.SetActive (true);
-			Time.timeScale = .25f;
-			Invoke("Reset", resetDelay);
+			ShowMenuAndMessage (gameOver);
 		} 
+	}
+
+	public void ShowMenuAndMessage (GameObject o, bool unitTesting = false)
+	{
+		o.SetActive (true);
+		if (unitTesting) return;
+		mainMenu.SetActive (true);
+		Time.timeScale = .25f;
+		//Invoke("Reset", resetDelay);   now with menu, PLAY button calls it 
 	}
 
 	public void Reset ()
@@ -58,7 +64,13 @@ public class GameManager : MonoBehaviour {
 		Time.timeScale = 1f;
 		Application.LoadLevel (Application.loadedLevel);
 	}
-	
+
+	public void Quit ()
+	{
+		Debug.Log("In the Unity IDE & in web builds, there is no way to quit game from a script!");
+		Application.Quit();
+	}
+
 	// Update is called once per frame
 	public void LoseLife(bool unitTesting = false)
 	{
