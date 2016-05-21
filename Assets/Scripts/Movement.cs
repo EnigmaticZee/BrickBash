@@ -3,7 +3,7 @@ using System.Collections;
 
 public class Movement : MonoBehaviour
 {
-    public float paddleSpeed = 1f;
+    public float paddleSpeed = 0.8f;
    // GameManager gm = new GameManager();
 
     private Vector3 playerPos = new Vector3(0, -9.5f, 0);
