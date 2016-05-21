@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using UnityEditor;
 using NUnit.Framework;
+using UnityEngine.SceneManagement;
 
 [TestFixture]
 public class UnitTesting {
@@ -48,4 +49,11 @@ public class UnitTesting {
 		gm.ShowMenuAndMessage(message, true);
 		Assert.IsTrue(message.activeSelf);
 	}
+
+    [Test]
+    public void TestLoadedScene()
+    {
+        SceneManager.LoadScene("Main");
+        Assert.IsTrue(SceneManager.GetActiveScene().name == "Main");
+    }
 }

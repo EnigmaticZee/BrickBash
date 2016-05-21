@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour {
 	public int lives = 3;
@@ -34,6 +35,14 @@ public class GameManager : MonoBehaviour {
 		Setup ();
         backgroundMusic.Play();
 	}
+
+    void Update()
+    {
+        if (Input.GetKey(KeyCode.Escape))
+        {
+            SceneManager.LoadScene("Pause");
+        }
+    }
    
 	public void Setup()
 	{
